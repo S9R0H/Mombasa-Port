@@ -24,8 +24,12 @@ harder to work with.
   [CodeSandbox](https://codesandbox.io/) which will not require anything to install.
 - For any of the above, make sure you have an IDE ready to start coding.
 
+## Assignments
+
+The two parts with assignments can be found in the folders `databases` and `mombasa-port`. Good luck!
+
 ## Handing in
 
-When you are done with both parts, please hand in your assignment by putting all your source files (.sql,
+A few minutes before time runs out (11:30 CET), start handing in your work by putting all the source files (.sql,
 .java/.js/.ts), so not just the answers, in one .zip file and emailing it to:
 [engineering-internships@carepay.com](engineering-internships@carepay.com)
