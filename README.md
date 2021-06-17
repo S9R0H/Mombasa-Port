@@ -26,5 +26,6 @@ harder to work with.
 
 ## Handing in
 
-When you are done with both parts, please hand in your assignment by putting all your source files (sql, java/js/ts) in
-1 zip and emailing it to: ...
+When you are done with both parts, please hand in your assignment by putting all your source files (.sql,
+.java/.js/.ts), so not just the answers, in one .zip file and emailing it to:
+[engineering-internships@carepay.com](engineering-internships@carepay.com)
