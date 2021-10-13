@@ -12,7 +12,7 @@ The rules of the port are:
 - Ships with a red flag are only accepted if they are cargo ships.
 - Ships with a blue flag are only accepted if they are after two green flag ships. 
 
-For bonus points also implement the following rule:
+For bonus points also implement the following rule(Optional):
 
 - Ships with a blue flag can also be accepted if their name has the same number of vowels as the ship coming after them.
 
