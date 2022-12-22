@@ -1,35 +1,58 @@
-# Internship Assignment
+# Assignment
 
-Thanks for joining us this morning. We will be assessing your skills in this technical assignment. The assignment
-consists of two parts: one database part and one programming part, both divided into smaller exercises. You will be
-required to do **at least one exercise from each part**, so if you get stuck on one of the questions, please move over
-to the next.
+Create a script for the Mombasa Port using JavaScript to help manage the flow of incoming ships. The script must be
+executed from your console, so no HTML should be required.
 
-## Prerequisites
+## Handing in:
 
-### For the databases part make sure you have installed:
+Please clone this repository to your own Github account. Do all the work in a branch called `develop`, then open a Pull
+request from develop to `main` when you are done.
 
-- MySQL 5.7 or 8
-- A tool to interact with your database, eg [DBeaver](https://dbeaver.io/) (free), [TablePlus](https://tableplus.com/)
-  (free trial) or only the CLI if you’re super comfortable.
+---
 
-Alternatively can use the online tool SQL Fiddle which will not require anything to install, but this is maybe a bit
-harder to work with.
+# Mombasa Port
 
-### For the programming part you can choose to use Java, JavaScript or TypeScript as language:
+The port of Mombasa is the busiest port in Kenya. We need to create a validation method to help manage the flow of
+incoming ships.
 
-- If you wish to use Java for the assignment, make sure you have installed Java 11.
-- If you wish to use JavaScript/TypeScript for the assignment, please make sure you install
-  [NodeJS](https://nodejs.org/) (the latest LTS version). Alternatively you can use [JSFiddle](https://jsfiddle.net/) or
-  [CodeSandbox](https://codesandbox.io/) which will not require anything to install.
-- For any of the above, make sure you have an IDE ready to start coding.
+Given a chronologically ordered array in which each entry is a ship, print an output with the ship name and if the ship
+is denied or accepted in the port.
 
-## Assignments
+The rules of the port are:
 
-The two parts with assignments can be found in the folders `databases` and `mombasa-port`. Good luck!
+- Ships with a green flag are always accepted.
+- Ships with a red flag are only accepted if they are cargo ships.
+- Ships with a blue flag are only accepted if they are after two green flag ships.
 
-## Handing in
+For bonus points also implement the following rule(Optional):
 
-A few minutes before time runs out (11:30 CET), start handing in your work by putting all the source files (.sql,
-.java/.js/.ts), so not just the answers, in one .zip file and emailing it to:
-[engineering-internships@carepay.com](engineering-internships@carepay.com)
+- Ships with a blue flag can also be accepted if their name has the same number of vowels as the ship coming after them.
+
+Please find the test data in the attached file. You can copy paste its contents into your code. Also think about a
+solution that is efficient, and can handle much more ships than the input data provides.
+
+## Example:
+
+### Input array:
+
+| Name         | Flag  | Type      |
+| ------------ | ----- | --------- |
+| Pontypool    | green | cargo     |
+| Langport     | red   | passenger |
+| Neza         | red   | cargo     |
+| Acacia       | green | passenger |
+| The Laura    | green | cargo     |
+| Pursuer      | blue  | cargo     |
+| The Bideford | blue  | cargo     |
+
+### Console output:
+
+```
+Pontypool - Accepted
+Langport - Denied
+Neza - Accepted
+Acacia - Accepted
+The Laura - Accepted
+Pursuer - Accepted
+The Bideford - Denied
+```
