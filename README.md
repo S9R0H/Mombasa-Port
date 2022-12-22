@@ -6,7 +6,7 @@ executed from your console, so no HTML should be required.
 ## Handing in:
 
 Please clone this repository to your own Github account. Do all the work in a branch called `develop`, then open a Pull
-request from develop to `main` when you are done.
+request from `develop` to `master` when you are done.
 
 ---
 
